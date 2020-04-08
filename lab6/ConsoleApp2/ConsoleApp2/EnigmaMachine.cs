@@ -23,9 +23,9 @@ namespace ConsoleApp2
         private const string rotorVconf = "FSOKANUERHMBTIYCWLQPZXVGJD";
 
         private const string reflectorCDuhnconf = "RDOBJNTKVEHMLFCWZAXGYIPSUQ";
-        private const int rightPosition = 1;
+        private const int rightPosition = 2;
         private const int centerPosition = 1;
-        private const int leftPosition = 2;
+        private const int leftPosition = 1;
 
         private class Rotor
         {

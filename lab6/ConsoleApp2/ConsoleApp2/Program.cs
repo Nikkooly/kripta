@@ -11,8 +11,7 @@ namespace ConsoleApp2
     {
         static void Main(string[] args)
         {
-            for (; ; )
-            {
+            
                 EnigmaMachine machine = new EnigmaMachine();
                 EnigmaSettings eSettings = new EnigmaSettings();
 
@@ -49,15 +48,20 @@ namespace ConsoleApp2
                 Console.WriteLine();
 
                 Console.ReadLine();
-            }
+            
         }
 
         private static void querySettings(EnigmaSettings e)
         {
-            string r;
-            Console.WriteLine("Enigma Machine Emulator\n");
+                string r;
+                Console.WriteLine("Enigma Machine Emulator");
+                Console.WriteLine("Type of left Rotor: III");
+                Console.WriteLine("Type of middle Rotor: Gamma");
+                Console.WriteLine("Type of right Rotor: V");
+                Console.WriteLine("Type of Reflector: C Duhn");
+                Console.WriteLine("Step L-M-R: 1-1-2");
                 e.setDefault();
-            Console.WriteLine();
+                Console.WriteLine();
         }
         private class EnigmaSettings
         {
@@ -75,7 +79,7 @@ namespace ConsoleApp2
             public void setDefault()
             {
                 rings = new char[] { 'A', 'A', 'A' };
-                grund = new char[] { 'A', 'A', 'A' };
+                grund = new char[] { 'B', 'A', 'A' };
                 order = "III-Gamma-V";
                 reflector = 'B';
                 plugs.Clear();
