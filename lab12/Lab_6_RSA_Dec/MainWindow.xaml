@@ -1,0 +1,35 @@
+﻿<Window x:Class="Lab_6_RSA_Dec.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Lab_6_RSA_Dec"
+        mc:Ignorable="d"
+        Title="Лабораторная №10 - Исследование алгоритмов генерации и верификации электронной цифровой подписи" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*"></RowDefinition>
+            <RowDefinition Height="18*"></RowDefinition>
+            <RowDefinition Height="1*"></RowDefinition>
+            <RowDefinition Height="2*"></RowDefinition>
+            <RowDefinition Height="1*"></RowDefinition>
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1*"></ColumnDefinition>
+            <ColumnDefinition Width="10*"></ColumnDefinition>
+            <ColumnDefinition Width="10*"></ColumnDefinition>
+            <ColumnDefinition Width="1*"></ColumnDefinition>
+            <ColumnDefinition Width="10*"></ColumnDefinition>
+            <ColumnDefinition Width="10*"></ColumnDefinition>
+            <ColumnDefinition Width="1*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+
+        <RichTextBox Name="RichTextEnc" Margin="5, 5, 5, 5" FontSize="15" FontFamily="Showcard Gothic" Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="2" PreviewTextInput="NumberValidationTextBox"></RichTextBox>
+        <RichTextBox Name="RichTextOrig" Margin="5, 5, 5, 5" FontSize="15" FontFamily="Showcard Gothic" Grid.Row="1" Grid.Column="4" Grid.ColumnSpan="2" IsReadOnly="True"></RichTextBox>
+        <TextBox Name="TextP" Margin="5, 5, 15, 5" FontSize="15" FontFamily="Showcard Gothic" Grid.Row="3" Grid.Column="1" PreviewTextInput="NumberValidationTextBox"></TextBox>
+        <TextBox Name="TextQ" Margin="15, 5, 5, 5" FontSize="15" FontFamily="Showcard Gothic" Grid.Row="3" Grid.Column="2" PreviewTextInput="NumberValidationTextBox"></TextBox>
+        <TextBox Name="TextE" Margin="5, 5, 15, 5" FontSize="15" FontFamily="Showcard Gothic" Grid.Row="3" Grid.Column="4" PreviewTextInput="NumberValidationTextBox"></TextBox>
+        <Button Name="Button" Margin="15, 5, 5, 5" FontSize="15" FontFamily="Showcard Gothic" Grid.Row="3" Grid.Column="5" Click="Decrypt">Decrypt</Button>
+    </Grid>
+</Window>
